@@ -1,0 +1,115 @@
+/*start media  */
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3em;
+    margin: 2em 1rem;
+    font-family: 'Cairo',
+        sans-serif;
+}
+@media only screen and (min-width: 35em) {
+    h1 {
+        font-size: 98px;
+        margin: 2em 4rem 1em;
+        font-family: 'Cairo',
+            sans-serif;
+    }
+}
+
+@media only screen and (min-width: 35em) {
+    h1 {
+        font-size: 98px;
+        margin: 2em 4rem 1em;
+        font-family: 'Cairo',
+            sans-serif;
+    }
+}
+@media only screen and (min-width: 35em) {
+    .container {
+        max-width: 50em;
+        padding: 4em;
+    }
+}
+
+
+@media (max-width: 991px) {
+
+
+    .navbar ul li a {
+        min-width: 100px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar ul {
+        width: 100%;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .navbar ul.open {
+        max-height: 100vh;
+    }
+
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        padding: 0;
+    }
+
+    .navbar .nav-toggle {
+        display: block;
+        position: absolute;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+
+    .navbar .nav-toggle span,
+    .navbar .nav-toggle span::after ,
+    .navbar .nav-toggle span::before{
+        display: block;
+        content: '';
+        background-color: #fff;
+        height: 3px;
+        width: 28px;
+        border-radius: 4px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .navbar .nav-toggle span::after {
+        transform: translateY(5px);
+    }
+    .navbar .nav-toggle span::before {
+        transform: translateY(-8px);
+    }
+
+    .navbar .nav-toggle.open-nav-toggle span {
+        background-color: transparent;
+    }
+
+    .navbar .nav-toggle.open-nav-toggle span::after {
+        transform: translateY(-3px) rotate(-45deg);
+    }
+    .navbar .nav-toggle.open-nav-toggle span::before {
+        transform: translateY(0px) rotate(45deg);
+    }
+}
+/* end media */
+
